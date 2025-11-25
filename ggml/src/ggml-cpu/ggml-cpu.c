@@ -2923,18 +2923,18 @@ static thread_ret_t ggml_graph_compute_thread(void * data) {
             ggml_barrier(state->threadpool);
         }
         //수정
-        #pragma omp critical
-        {
-        printf("=======================================\n");
-        printf("%s\n", node->name);
-        printf("%s\n", ggml_op_name(node->op));
-        printf("%dth thread among %d threads\n", state->ith, &tp->n_threads_cur);
-        // printf("compute_duration: %f ms\n", compute_duration);
-        // printf("sync_duration: %f ms\n", sync_duration);
-        // printf("sum_of_duration: %f ms\n", compute_duration + sync_duration);
-        printf("\n");
-        printf("=======================================\n\n");
-        }
+        // #pragma omp critical
+        // {
+        // printf("=======================================\n");
+        // printf("%s\n", node->name);
+        // printf("%s\n", ggml_op_name(node->op));
+        // printf("%dth thread among %d threads\n", state->ith, &tp->n_threads_cur);
+        // // printf("compute_duration: %f ms\n", compute_duration);
+        // // printf("sync_duration: %f ms\n", sync_duration);
+        // // printf("sum_of_duration: %f ms\n", compute_duration + sync_duration);
+        // printf("\n");
+        // printf("=======================================\n\n");
+        // }
     }
 
     ggml_barrier(state->threadpool);
