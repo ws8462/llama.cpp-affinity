@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/llama-embedding.dir/embedding.cpp.o -o ../../bin/llama-embedding  -Wl,-rpath,/home/kws/llama.cpp-b4284/linux/src:/home/kws/llama.cpp-b4284/linux/ggml/src: ../../common/libcommon.a ../../src/libllama.so ../../ggml/src/libggml.so ../../ggml/src/libggml-cpu.so ../../ggml/src/libggml-base.so 
